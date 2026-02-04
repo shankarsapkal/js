@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="post">
+        <input type="text" placeholder="enter your fname" id="fname">
+        <input type="text" placeholder="enter your lname" id="lname">
+        <input type="email" placeholder="enter your email" id="email">
+        <input type="password" placeholder="enter your password" id="password">
+        <input type="tel" placeholder="enter your phone" id="phone">
+        <input type="submit" id="" onclick="submitdata(event)">
+        <input type="reset">
+
+    </form>
+
+    <script>
+        function submitdata(event) {
+            event.preventDefault()
+            let fname = document.getElementById("fname").value
+            let lname = document.getElementById("lname").value
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            let phone = document.getElementById("phone").value
+
+
+            if (fname == "" || lname == "" || email == "" || password == "" || phone == "") {
+                alert("please fill all details")
+            } else if (!email.includes("@")) {
+                alert("please enter a valid emailId")
+            } else if (password.length != 6 || !password.includes("#")) {
+                alert("enter minimum 6 digit password")
+            } else if (phone.length != 10) {
+                alert("enter a valid phone number")
+            } else {
+                fname = " "
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function declairation
+
+        function hello() {
+            console.log("hello duniya")
+        }
+        hello()
+
+        // function expression 
+
+        let a = function () {
+            return "hey i am a function expression"
+        }
+        //    console.log(a())
+
+        let b = a()
+        console.log(b)
+
+        // arrow function
+
+        let c = (a, b) => {
+            return a + b
+        }
+
+        let d = c(12, 45)
+
+        let x = d - 23;
+        console.log(x)
+
+        // 
+
+        function data(fname = "mohan") {
+            console.log(fname)
+        }
+        data()
+
+        function getdata() {
+
+            for (let i = 2; i <= 20; i += 2) {
+                console.log(i)
+            }
+
+        }
+        getdata()
+
+        
+
+        let p = () => {
+            for (let i = 0; i <= 5; i++) {
+                console.log("outer lop ", i)
+                for (let j = 1; j <= 4; j++) {
+                    console.log("inner loop", j * 2)
+                }
+            }
+        }
+        p()
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let obj = {
+            fname: "vashu",
+            lname: "narayan",
+            phone: 345678
+        }
+        console.log(obj.fname)
+        console.log(obj.lname)
+        obj.address = "kisan nagar"
+        Object.freeze(obj)
+
+
+
+
+        
+        obj.lname = "kumar"
+        delete obj.lname
+
+        console.log(obj)
+
+
+        let personal = {}
+        personal.fname = "shivdas";
+        personal.Sname = "shankar";
+        personal.phone = 123456;
+
+        console.log(personal)
+    </script>
+</body>
+
+</html>

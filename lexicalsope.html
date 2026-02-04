@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let a = 45;
+        // function hello(){
+        //      let a = 45;
+
+        // }
+        // hello()
+        //   console.log(a)
+        // let a = 23
+        // function first() {
+
+        //     function second() {
+        //         function third() {
+        //             console.log(a)
+        //         }
+        //         third()
+        //     }
+        //     second()
+        // }
+        // first()
+
+        function first() {
+            let a = 45
+            function second() {
+                a++
+                console.log(a)
+            }
+            return second
+
+        }
+        var d = first()
+        d()
+        d()
+        d()
+
+
+    </script>
+</body>
+
+</html>
